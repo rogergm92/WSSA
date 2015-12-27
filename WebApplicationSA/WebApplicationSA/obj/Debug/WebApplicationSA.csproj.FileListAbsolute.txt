@@ -1,0 +1,45 @@
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\csc.exe
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\vbc.exe
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\WebApplicationSA.dll.config
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\WebApplicationSA.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\WebApplicationSA.pdb
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.csprojResolveAssemblyReference.cache
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.dll
+C:\Users\Roger\Documents\Academico\USAC 8 2015\Analisis y Diseno 2\Tareas CLASE\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.pdb
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\csc.exe
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\vbc.exe
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\WebApplicationSA.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\WebApplicationSA.pdb
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\mscorlib.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\normidna.nlp
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\normnfc.nlp
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\normnfd.nlp
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\normnfkc.nlp
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\bin\normnfkd.nlp
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.dll
+C:\Users\Rodrigo\Desktop\WebApplicationSA\WebApplicationSA\WebApplicationSA\obj\Debug\WebApplicationSA.pdb

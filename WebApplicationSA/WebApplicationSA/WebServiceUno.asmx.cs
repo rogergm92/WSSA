@@ -35,27 +35,71 @@ namespace WebApplicationSA
         public DataSet getClientes(int IDUsuario)
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = connection;
+            conn.ConnectionString = "Server="+ipp+";Database=miDB;User Id=externo;Password = RgM712712712; ";
             SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM cliente", conn);
             DataSet ds = new DataSet();
             sda.Fill(ds);
 
-            DateTime myDateTime = DateTime.Now;
-            
+            /*DateTime myDateTime = DateTime.Now;
+            string sqlFormattedDate = myDateTime.ToString("yyyy-MM-dd HH:mm:ss");
 
             SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO Bitacora ([Fecha] ,[TipoTransaccion] ,[Detalle] ,[IDUsuario]) VALUES  ( '" +
-                myDateTime + "' , " + "'getClientes'"
+            cmd.CommandText =   "INSERT INTO Bitacora ([FechaHora] ,[TipoTransaccion] ,[Detalle] ,[IDUsuario]) VALUES  ( '"+
+                sqlFormattedDate + "' , " + "'getClientes'"
                 + " , " + "'se consulta get clientes'"
-                   + " , " + IDUsuario + ")";
-            cmd.Connection = conn;
+                   +" , " + IDUsuario+ ")";
+            cmd.Connection = conn; 
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
-
+            */
 
             return ds;
+        }
+        
+        [WebMethod]
+        public Respuesta setCliente_WS02(String nit, string nombre, int telefono  , string direccion, int IDUsuario)
+        {
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = "Server=" + ipp + ";Database=miDB;User Id=externo;Password = RgM712712712; ";
+            conn.Open();
+
+
+            // 1.  identificar el SP
+            SqlCommand cmd = new SqlCommand("WS02", conn); // asi se llama el procedimeinto almacenado
+
+            // 2. set the command object so it knows to execute a stored procedure
+            cmd.CommandType = CommandType.StoredProcedure;
+              
+            // 3. agregar los parametros
+            cmd.Parameters.Add(new SqlParameter("@NIT", nit));
+            cmd.Parameters.Add(new SqlParameter("@Nombre", nombre));
+            cmd.Parameters.Add(new SqlParameter("@Telefono", telefono));
+            cmd.Parameters.Add(new SqlParameter("@Direccion", direccion)); 
+            cmd.Parameters.Add(new SqlParameter("@IDUsuario", IDUsuario));
+
+            Respuesta res = new Respuesta();
+            res.listaRes = new List<object>();
+            res.listaRes.Add(-10);
+            res.listaRes.Add("naranjas");
+            res.listaRes.Add(IDUsuario);
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                // iterar en los resultados
+                while (rdr.Read())
+                {
+                    //esto es pa que borre lod e antes
+                    res.listaRes = new List<object>();
+                    // de una vez pongo el return ... obvio para mas de un resultado no lo deberia de tener
+                    res.listaRes.Add(0);
+                    res.listaRes.Add("Exito insertando");
+                    res.listaRes.Add(rdr[0]);
+                    return res;
+                }
+            }
+
+            return res; // por gusto esta este
         }
 
 
@@ -319,6 +363,81 @@ namespace WebApplicationSA
                     res.listaRes.Add(rdr["Nombre"]);
                     res.listaRes.Add(rdr["Direccion"]);
                     res.listaRes.Add(rdr["Telefono"]);
+                    return res;
+                }
+            }
+
+            return res; // por gusto esta este
+        }
+        
+         [WebMethod]
+        public List<Respuesta> getMedicamento_WS04(int IDFarmacia, int IDMedicamento, string Nombre , int IDUsuario)
+        {
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = "Server=" + ipp + ";Database=miDB;User Id=externo;Password = RgM712712712; ";
+            conn.Open();
+
+
+            // 1.  identificar el SP
+            SqlCommand cmd = new SqlCommand("WS04", conn); // asi se llama el procedimeinto almacenado
+
+            // 2. set the command object so it knows to execute a stored procedure
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            // 3. agregar los parametros
+            cmd.Parameters.Add(new SqlParameter("@IDFarmacia", IDFarmacia));
+            cmd.Parameters.Add(new SqlParameter("@IDMedicamento", IDMedicamento));
+            cmd.Parameters.Add(new SqlParameter("@Nombre", Nombre));
+            cmd.Parameters.Add(new SqlParameter("@IDUsuario", IDUsuario));
+
+            List <Respuesta> lres = new List<Respuesta>();
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                // iterar en los resultados
+                while (rdr.Read())
+                {
+                    Respuesta res = new Respuesta();
+                    res.listaRes = new List<object>();
+                    res.listaRes = new List<object>();
+                    res.listaRes.Add(rdr[0]);
+                    res.listaRes.Add(rdr[1]);
+                    res.listaRes.Add(rdr[2]);
+                    res.listaRes.Add(rdr[3]);
+                    res.listaRes.Add(rdr[4]);
+                    lres.Add( res);
+                }
+            }
+
+            return lres; // por gusto esta este
+        }
+        
+        [WebMethod]
+        public int getIngresar_WS(String Nombre, String Password)
+        {
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = "Server=" + ipp + ";Database=miDB;User Id=externo;Password = RgM712712712; ";
+            conn.Open();
+
+
+            // 1.  identificar el SP
+            SqlCommand cmd = new SqlCommand("Ingresar", conn); // asi se llama el procedimeinto almacenado
+
+            // 2. set the command object so it knows to execute a stored procedure
+            cmd.CommandType = CommandType.StoredProcedure;
+            
+            // 3. agregar los parametros
+            cmd.Parameters.Add(new SqlParameter("@Nombre", Nombre));
+            cmd.Parameters.Add(new SqlParameter("@Password", Password));
+
+            int res = -1;
+            using (SqlDataReader rdr = cmd.ExecuteReader())
+            {
+                // iterar en los resultados
+                while (rdr.Read())
+                {
+                    //esto es pa que borre lod e antes
+                    res = (int)rdr[0];
+                    
                     return res;
                 }
             }
